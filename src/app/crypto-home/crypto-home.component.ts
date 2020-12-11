@@ -50,6 +50,19 @@ export class CryptoHomeComponent implements OnInit {
           this.sendUpdate(this.ETH,'10-15')
         }
       }
+      if(this.BTC < this.IBTC) {
+        if((this.IBTC - this.BTC > 5 && this.IBTC - this.BTC < 10)) {
+          this.sendUpdate(this.BTC,'5-10')
+        }else if((this.IBTC - this.BTC > 10 && this.IBTC - this.BTC < 15)) {
+          this.sendUpdate(this.BTC,'10-15')
+        }
+      }else {
+        if((this.BTC - this.IBTC > 5 && this.BTC - this.IBTC < 10)) {
+          this.sendUpdate(this.BTC,'5-10')
+        }else if((this.BTC - this.IBTC > 10 && this.BTC - this.IBTC < 15)) {
+          this.sendUpdate(this.BTC,'10-15')
+        }
+      }
     }) 
   }
 
