@@ -39,28 +39,28 @@ export class CryptoHomeComponent implements OnInit {
       this.ETH = this.cryptoData[0]['price'];
       if(this.ETH < this.IETH) {
         if((this.IETH - this.ETH > 5 && this.IETH - this.ETH < 10)) {
-          this.sendUpdate(this.ETH,'5-10')
+          this.sendUpdate(this.ETH,'5-10 DUMP')
         }else if((this.IETH - this.ETH > 10 && this.IETH - this.ETH < 15)) {
-          this.sendUpdate(this.ETH,'10-15')
+          this.sendUpdate(this.ETH,'10-15 DUMP')
         }
       }else {
         if((this.ETH - this.IETH > 5 && this.ETH - this.IETH < 10)) {
-          this.sendUpdate(this.ETH,'5-10')
+          this.sendUpdate(this.ETH,'5-10 RISE')
         }else if((this.ETH - this.IETH > 10 && this.ETH - this.IETH < 15)) {
-          this.sendUpdate(this.ETH,'10-15')
+          this.sendUpdate(this.ETH,'10-15 RISE')
         }
       }
       if(this.BTC < this.IBTC) {
         if((this.IBTC - this.BTC > 5 && this.IBTC - this.BTC < 10)) {
-          this.sendUpdate(this.BTC,'5-10')
+          this.sendUpdate(this.BTC,'5-10 DUMP')
         }else if((this.IBTC - this.BTC > 10 && this.IBTC - this.BTC < 15)) {
-          this.sendUpdate(this.BTC,'10-15')
+          this.sendUpdate(this.BTC,'10-15 DUMP')
         }
       }else {
         if((this.BTC - this.IBTC > 5 && this.BTC - this.IBTC < 10)) {
-          this.sendUpdate(this.BTC,'5-10')
+          this.sendUpdate(this.BTC,'5-10 RISE')
         }else if((this.BTC - this.IBTC > 10 && this.BTC - this.IBTC < 15)) {
-          this.sendUpdate(this.BTC,'10-15')
+          this.sendUpdate(this.BTC,'10-15 RISE')
         }
       }
     }) 
