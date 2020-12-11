@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "crypto-watch"
+  "defaultProject": "crypto-watch",
+  "cli": {
+    "analytics": false
+  }
 }
