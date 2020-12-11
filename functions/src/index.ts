@@ -15,7 +15,7 @@ exports.price = functions.database.ref('/Bitcoin').onUpdate((event: any)  => {
             .then((price: any) => {
                 console.log(price + "faksjdakjsdhajksdhaskjdh")
                 const textMessage ={
-                    body : 'Bitcoin Price is ' + price.value,
+                    body : 'Bitcoin Price is ' + price.value + 'Difference in price is ' + price.difference,
                     to : '+15519985623',
                     from : '+18127821779'
                 }
